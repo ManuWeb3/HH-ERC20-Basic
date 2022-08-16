@@ -1,4 +1,7 @@
+// copied from Raffle
+
 // all below are the plug-ins that we import, that were actually downloaded and installed by yarn / npm, present inside node_modules
+
 require("@nomiclabs/hardhat-waffle")
 require("@nomiclabs/hardhat-etherscan")
 require("hardhat-deploy")
@@ -26,6 +29,7 @@ module.exports = {
     localhost: {                  //  Default networks object = "localhost at the url"
       url: "http://127.0.0.1:8545/",
       chainId: 31337,
+      blockConfirmations: 1,      // less is ok as it's a local network
     },
     rinkeby: {                    // 2nd kind of HH n/w = JSON-RPC based networks (external nodes incl. dummy Ganache)
       chainId: 4,
