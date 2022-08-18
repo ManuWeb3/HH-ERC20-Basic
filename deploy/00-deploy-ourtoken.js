@@ -11,8 +11,8 @@ module.exports = async function ({getNamedAccounts, deployments}) {
     
     //  put BigNumber in quotes and then pass it on as an arg
     //  Reason - JS does not recognize numbers this big, so you have to pass such a no. as a string
-    const initialSupply = "50000000000000000000"                        // more static approach = 50 ETH
-    //const initialSupply = networkConfig[chainId]["initialSupply"]     // lesser static approach, not hard-coded in the deploy script itself
+    //  const initialSupply = "50000000000000000000"                        // more static approach = 50 ETH
+    const initialSupply = networkConfig[chainId]["initialSupply"]     // lesser static approach, not hard-coded in the deploy script itself
     log(`Initial Supply has been set to: ${initialSupply}`)             // outputs that string BigNumber as a regular integer no.
     
     // args for the Constructor of OurToken.sol

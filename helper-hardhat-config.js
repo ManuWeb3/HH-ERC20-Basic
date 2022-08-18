@@ -5,12 +5,12 @@ const { ethers } = require("hardhat")
 const networkConfig = {
     4: {
         name: "rinkeby",
-        initialSupply: "5000000000000000000"         // 50 ETH
+        initialSupply: "50000000000000000000"         // 50 OT tokens like 50 ETH
         
     },
     31337: {
         name: "hardhat",
-        initialSupply: "5000000000000000000"        // 50 ETH
+        initialSupply: "50000000000000000000"        // 50 OT tokens like 50 ETH
     }
 }
 
