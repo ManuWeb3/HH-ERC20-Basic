@@ -31,7 +31,7 @@ module.exports = async function ({getNamedAccounts, deployments}) {
     log("---------------------------------------------------")
 
     if(!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
-        log("Verifying on Rinkeby.Etehrscan...")
+        log("Verifying on Testnet.Etehrscan...")
         await verify(ourToken.address, args)
     }
 }
