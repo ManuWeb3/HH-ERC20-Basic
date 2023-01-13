@@ -10,10 +10,10 @@ require("hardhat-gas-reporter")
 //require("hardhat-contract-sizer")
 require("dotenv").config()
 
-const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL ||  "https://eth-rinkeby.alchemyapi.io/v2/s-nj9OTPBrtTKzx7n2It6M2h_EUj55HR"
-const PRIVATE_KEY = process.env.PRIVATE_KEY         ||   "0x"                                                 // empty || purpose??
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY ||  "IJIWR1PQW9I2DYY7G82PWRXITN3TEV3QAC"
-const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "a02bc5bc-fca2-4044-8bb5-52495b5c878e"
+const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
+const PRIVATE_KEY = process.env.PRIVATE_KEY
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
 //const GAS_REPORT = process.env.GAS_REPORT     // does NOT work this way ??
 
 /** @type import('hardhat/config').HardhatUserConfig */
